@@ -1,0 +1,210 @@
+/* FONT IMPORTS */
+
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+@font-face {
+    font-family: 'BadaboomBB';
+    src: url('../assets/fonts/badabb__-webfont.woff2') format('woff2'),
+    url('../assets/fonts/badabb__-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* LAYOUTS */
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    /* background-image: radial-gradient(ellipse farthest-corner, transparent 0%, transparent 35%, #fff 30%, #fff 40%, transparent 90%), 
+    radial-gradient(ellipse farthest-corner at 0px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 6px 6px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 0px 6px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 6px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%),  
+    linear-gradient(90deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
+    background-size: 6px 6px, 6px 6px, 6px 6px, 6px 6px, 6px 6px, 100% 100%; */
+    /* background: radial-gradient(
+    circle,
+    purple,
+    purple 80%,
+    #4b026f 50%, 
+    #4b026f
+    );
+    background-size: 10px 10px; */
+    /* background: linear-gradient(
+        45deg,
+        lightblue,
+        lightblue 50%,
+        rgb(16, 98, 146) 50%,
+        rgb(16, 98, 146)
+    );
+    background-size: 8px 8px;  */
+}
+
+div, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+text {
+    font-size: 16px;
+    font-family: BadaboomBB, script; 
+}
+
+.panel {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 100% 100%, cover;
+}
+
+/* .bgimg {
+    background-image: url("../assets/images/comic-book-faces.jpg");
+    background-size: 100% 100%;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+} */
+
+.panel .inner {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.panel .outter {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* NAVBAR HEADER*/
+
+header {
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    z-index: 8000;
+    transition: 1000ms;
+    -webkit-transition: 1000ms;
+}
+
+main .about .edition {
+    position: absolute;
+    text-align: right;
+    top: 10px;
+    right: 20px;;
+    font-size: 24px;
+}
+
+header .nav {
+    width: 100%;
+    height: auto;
+    top: 0;
+    display: block;
+    text-align: center;
+}
+
+header .nav li .active {
+    color: black;
+    font-size: 28px;
+    text-shadow: -1px -1px yellow, 1px 1px orange,  2px 2px orange;
+}
+
+header .nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+    position: relative;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+
+.yellow-text {
+    color: #ffce55;
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", sans-serif;
+  color: #222;
+}
+
+.centered {
+    text-align: center;
+}
+
+.bangers {
+    font-family: "Bangers";
+    width: 100%;
+}
+
+.badaboombb {
+    font-family: "BadaboomBB";
+    width: 100%;
+}
+
+.headline {
+    margin: 0 0 -1em 0;
+    -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+    -moz-transform: rotate(-10deg) skew(-10deg, 0);
+    -ms-transform: rotate(-10deg) skew(-10deg, 0);
+    -o-transform: rotate(-10deg) skew(-10deg, 0);
+    transform: rotate(-10deg) skew(-10deg, 0);
+    padding-bottom: 50px;
+}
+
+.yellow-shadow {
+    text-shadow: -1px -1px yellow, 1px 1px orange,  2px 2px orange;
+}
+
+.black-shadow {
+    text-shadow: -1px -1px black, 1px 1px black,  2px 2px black;
+}
+
+h1.badaboombb {
+    font-size: 160px;
+}
+  
+h2.badaboombb {
+    font-size: 110px;
+}
+  
+h3.badaboombb {
+    font-size: 80px;
+}
+  
+h4.badaboombb {
+    font-size: 60px;
+}
+
+p {
+    font-size: 30px;
+    letter-spacing: 2px;
+}

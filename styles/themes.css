@@ -1,0 +1,84 @@
+.panel.redbg {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%),
+    radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 0px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%),
+    linear-gradient(45deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%),
+    url("../assets/images/comic-book-faces.jpg");
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: soft-light;
+}
+.panel.bluebg {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%),
+    radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 0px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    linear-gradient(45deg, #038ecf 0, #51cbf1 30%, #7ff9ff 50%, #51cbf1 70%, #038ecf 100%),
+    url("../assets/images/comic-book-faces.jpg");
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: soft-light;
+}
+.panel.greybg {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%),
+    radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 0px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    linear-gradient(45deg, #acacac 0, #dadada 30%, #f2f2f2 50%, #dadada 70%, #acacac 100%),
+    url("../assets/images/comic-book-faces.jpg");
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: soft-light;
+}
+.panel.yellowbg {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%),
+    radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 0px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    linear-gradient(45deg, #ffce55 0, #fffc83 30%, #ffffb1 50%, #fffc83 70%, #ffce55 100%),
+    url("../assets/images/comic-book-faces.jpg");
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: soft-light;
+}
+.panel.orangebg {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%),
+    radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 0px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    linear-gradient(45deg, #fa9939 0, #ffc767 30%, #fff595 50%, #ffc767 70%, #fa9939 100%),
+    url("../assets/images/comic-book-faces.jpg");
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: soft-light;
+}
+.panel.pinkbg {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%),
+    radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 0px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    linear-gradient(45deg, #f03485 0, #ff62b3 30%, #ff90e1 50%, #ff62b3 70%, #f03485 100%),
+    url("../assets/images/comic-book-faces.jpg");
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: soft-light;
+}
+.panel.greenbg {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%),
+    radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 0px 4px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    radial-gradient(ellipse farthest-corner at 4px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
+    linear-gradient(45deg, #9dc705 0, #cbf533 30%, #f9ff61 50%, #cbf533 70%, #9dc705 100%),
+    url("../assets/images/comic-book-faces.jpg");
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: soft-light;
+}
+.dottedbg {
+    background-image: radial-gradient(rgba(0,0,0,.8), rgba(0,0,0,.5) 2px, transparent 2px, transparent 100%), 
+    url("../assets/images/comic-book-faces.jpg"); 
+    background-size: 3px 3px, cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: soft-light;
+}
