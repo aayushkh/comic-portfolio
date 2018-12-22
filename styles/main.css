@@ -68,15 +68,6 @@ text {
     background-size: 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 100% 100%, cover;
 }
 
-/* .bgimg {
-    background-image: url("../assets/images/comic-book-faces.jpg");
-    background-size: 100% 100%;
-    background-size: cover;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.7);
-    background-blend-mode: lighten;
-} */
-
 .panel .inner {
     position: absolute;
     top: 20%;
@@ -102,6 +93,26 @@ header {
     z-index: 8000;
     transition: 1000ms;
     -webkit-transition: 1000ms;
+}
+
+img.barcode {
+    max-width: 250px;
+    height: auto;
+    position: absolute;
+    left: -25px;
+    bottom: 20px;
+}
+
+.barcode-text {
+    width: 201px;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-size: 26px;
+    position: absolute;
+    bottom: 175px;
+    text-align: center;
+    border: 1px solid #222;
 }
 
 main .about .edition {
@@ -208,3 +219,4 @@ p {
     font-size: 30px;
     letter-spacing: 2px;
 }
+
