@@ -103,14 +103,21 @@ img.barcode {
     bottom: 20px;
 }
 
-.barcode-text {
-    width: 201px;
-    padding: 0;
-    margin: 0;
-    background-color: #f0f0f0;
-    font-size: 26px;
+img.gif {
+    max-width: 220px;
+    height: auto;
     position: absolute;
-    bottom: 175px;
+    left: -50px;
+    bottom: 210px;
+}
+
+.barcode-text {
+    width: 202px;
+    background-color: #f0f0f0;
+    font-size: 22px;
+    position: absolute;
+    left: -1px;
+    bottom: 165px;
     text-align: center;
     border: 1px solid #222;
 }
@@ -119,8 +126,14 @@ main .about .edition {
     position: absolute;
     text-align: right;
     top: 10px;
-    right: 20px;;
+    right: 0px;
     font-size: 24px;
+    width: 202px;
+    background-color: #f0f0f0;
+    text-align: left;
+    padding: 0 20px 0 20px;
+    border: 1px solid #222;
+    border-right: 0;
 }
 
 header .nav {
