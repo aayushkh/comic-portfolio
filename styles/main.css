@@ -22,29 +22,7 @@ body {
     margin: 0;
     width: 100%;
     height: auto;
-    /* background-image: radial-gradient(ellipse farthest-corner, transparent 0%, transparent 35%, #fff 30%, #fff 40%, transparent 90%), 
-    radial-gradient(ellipse farthest-corner at 0px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), 
-    radial-gradient(ellipse farthest-corner at 6px 6px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), 
-    radial-gradient(ellipse farthest-corner at 0px 6px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), 
-    radial-gradient(ellipse farthest-corner at 6px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%),  
-    linear-gradient(90deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
-    background-size: 6px 6px, 6px 6px, 6px 6px, 6px 6px, 6px 6px, 100% 100%; */
-    /* background: radial-gradient(
-    circle,
-    purple,
-    purple 80%,
-    #4b026f 50%, 
-    #4b026f
-    );
-    background-size: 10px 10px; */
-    /* background: linear-gradient(
-        45deg,
-        lightblue,
-        lightblue 50%,
-        rgb(16, 98, 146) 50%,
-        rgb(16, 98, 146)
-    );
-    background-size: 8px 8px;  */
+    background: #333;
 }
 
 div, ul {
@@ -61,11 +39,31 @@ text {
     font-family: BadaboomBB, script; 
 }
 
+.site {
+    height: 100%;
+}
+
+.container {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+
+    -webkit-transform-style : preserve-3d;
+    -moz-transform-style    : preserve-3d;
+    -o-transform-style      : preserve-3d;
+    -ms-transform-style     : preserve-3d;
+    transform-style         : preserve-3d;
+}
+
 .panel {
+    position: fixed;
     width: 100%;
     height: 100vh;
-    position: relative;
     background-size: 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 100% 100%, cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .panel .inner {
@@ -77,9 +75,16 @@ text {
 
 .panel .outter {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.panel.open {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
 /* NAVBAR HEADER*/
@@ -90,7 +95,7 @@ header {
     position: absolute;
     background-color: transparent;
     display: block;
-    z-index: 8000;
+    z-index: 2000;
     transition: 1000ms;
     -webkit-transition: 1000ms;
 }
@@ -122,7 +127,7 @@ img.gif {
     border: 1px solid #222;
 }
 
-main .about .edition {
+main.home .edition {
     position: absolute;
     text-align: right;
     top: 10px;
@@ -205,7 +210,7 @@ h5 {
 }
 
 .yellow-shadow {
-    text-shadow: -1px -1px yellow, 1px 1px orange,  2px 2px orange;
+    text-shadow: -1px -1px yellow, 1px 1px #ffa500,  2px 2px orange;
 }
 
 .black-shadow {
@@ -225,7 +230,13 @@ h3.badaboombb {
 }
   
 h4.badaboombb {
-    font-size: 60px;
+    font-size: 44px;
+    margin: 25px;
+    letter-spacing: 2px; 
+}
+
+h5.badaboombb {
+    font-size: 40px;
 }
 
 p {
@@ -233,3 +244,26 @@ p {
     letter-spacing: 2px;
 }
 
+/* WORKXP */
+
+.fa-times-circle {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    font-size: 44px;
+    color: #222;
+}
+
+.back-arrow {
+    display: flex;
+    font-size: 30px;
+    position: fixed;
+    top: 4%;
+    left: 3.5%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.back-arrow img {
+    height: 34px;
+}
