@@ -12,16 +12,12 @@
 
 /* LAYOUTS */
 
-html{
-    min-height: 100%;
-    position: relative;
-}
-
-body {
+html, body {
+    position: fixed;
     padding: 0;
     margin: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     background: #333;
 }
 
@@ -101,10 +97,9 @@ header {
 }
 
 img.barcode {
-    max-width: 250px;
+    max-width: 225px;
     height: auto;
     position: absolute;
-    left: -25px;
     bottom: 20px;
 }
 
@@ -117,7 +112,7 @@ img.gif {
 }
 
 .barcode-text {
-    width: 202px;
+    width: 203px;
     background-color: #f0f0f0;
     font-size: 22px;
     position: absolute;
@@ -168,7 +163,6 @@ header .nav li {
     transition: 300ms;
     -webkit-transition: 300ms;
 }
-
 
 .yellow-text {
     color: #ffce55;
