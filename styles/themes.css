@@ -1,3 +1,7 @@
+.panel.nobg {
+    background-color: rgba(255, 255, 255);
+    background-blend-mode: soft-light;
+}
 .panel.redbg {
     background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%),
     radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
@@ -17,6 +21,7 @@
     radial-gradient(ellipse farthest-corner at 4px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), 
     linear-gradient(45deg, #038ecf 0, #51cbf1 30%, #7ff9ff 50%, #51cbf1 70%, #038ecf 100%),
     url("../assets/images/comic-book-faces.jpg");
+    background-size: 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 100% 100%, cover;
     background-color: rgba(255, 255, 255, 0.4);
     background-blend-mode: soft-light;
 }

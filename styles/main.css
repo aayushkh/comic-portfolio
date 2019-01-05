@@ -77,9 +77,6 @@ text {
 }
 
 .panel.open {
-    position: fixed;
-    width: 100%;
-    height: 100%;
     z-index: 2;
 }
 
@@ -150,6 +147,10 @@ header .nav li .active {
     text-shadow: -1px -1px yellow, 1px 1px orange,  2px 2px orange;
 }
 
+.navOption {
+    cursor: pointer;
+}
+
 header .nav li {
     list-style: none;
     display: inline-block;
@@ -185,7 +186,6 @@ h5 {
 
 .bangers {
     font-family: "Bangers";
-    width: 100%;
 }
 
 .badaboombb {
@@ -209,6 +209,10 @@ h5 {
 
 .black-shadow {
     text-shadow: -1px -1px black, 1px 1px black,  2px 2px black;
+}
+
+.grey-shadow {
+    text-shadow: -1px -1px #AAA, 1px 1px #BBB, 2px 2px #222;
 }
 
 h1.badaboombb {
@@ -238,7 +242,7 @@ p {
     letter-spacing: 2px;
 }
 
-/* WORKXP */
+/* Common for each aside */
 
 .fa-times-circle {
     position: fixed;

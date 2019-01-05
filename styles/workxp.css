@@ -1,0 +1,93 @@
+/* WorkXP */
+
+.workxp h4 {
+    color: gray;
+}
+
+.box{
+    margin:25px auto;
+    width:95%;
+    height:38%;
+    background:#fff;
+    border: solid black;
+    border-color: black;
+}
+  
+.box1 {
+    background-image: url(../assets/images/supplyframe-splash.jpg);
+    background-position: center center;
+    background-size: 100% auto;
+    border-width: 3px 4px 3px 5px;
+    border-radius: 9% 1% 40% 1%/4% 12% 6% 20%;
+    transform: rotate(1deg);
+}
+
+.top-right {
+    font-size: 24px;
+    top: -2px;
+    position: absolute;
+    right: 0;
+    transform: rotate(1deg) skew(-5deg);
+    margin: 0px;
+    padding: 5px 5px;
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+}
+
+.bottom-left {
+    font-size: 20px;
+    max-width: 300px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transform: rotate(-1deg) skew(0deg);
+    margin: 0px;
+    padding: 5px 5px;
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+}
+
+.bottom-right {
+    font-size: 20px;
+    max-width: 300px;
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    transform: rotate(-1deg) skew(-3deg);
+    margin: 0px;
+    padding: 5px 5px;
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+}
+
+.box2 {
+    background-image: url(../assets/images/usc-ict-image.jpg);
+    background-position: center bottom;
+    background-size: 100% auto;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 5% 95% 6% 10%/10% 4% 10% 5%;
+}
+
+.boxinner{
+    font-size: 32px;
+    width: max-content;
+    transform: rotate(-1deg);
+    margin: 0px;
+    padding: 5px 5px;
+    float: left;
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+}
+
+.altrotation {
+    transform: rotate(-2deg);
+}
+
+.emphasis {
+    color: gold;
+    text-align: center;
+}
