@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Your friendly neighbourhood geek, Aayush</title>
+        <title>Your friendly neighbourhood geek, Captain Levi</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.PNG">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css">
         <link rel="stylesheet" type="text/css" href="./styles/main.css">
         <link rel="stylesheet" type="text/css" href="./styles/workxp.css">
         <link rel="stylesheet" type="text/css" href="./styles/themes.css">
@@ -16,7 +17,6 @@
             <div class="container">
                 <main class="home panel bluebg open">
                     <header>
-                        <!-- flat nav for desktop -->
                         <ul class="nav">
                             <li class="navOption" data-nav="home"><div class="navItem bangers yellow-text black-shadow active">HOME</div></li>
                             <li class="navOption" data-nav="workxp"><div class="navItem bangers yellow-text black-shadow">WORK XP</div></li>
@@ -42,40 +42,75 @@
                     <img class="barcode" src='./assets/images/barcode.PNG'/>
                 </main>
 
-                <aside class="workxp panel nobg">
-                    <div class="back-arrow">
-                        <img  src="./assets/images/backarrow.svg"/>
-                        <div class="bangers inline">Prev</div>
+                <aside class="workxp panel nobg" data-panel="workxp">
+                    <div id="fullpage">
+                        <div class="section">
+                            <div id="workxp-header">
+                                <div class="back-arrow">
+                                    <img  src="./assets/images/backarrow.svg"/>
+                                    <div class="bangers inline">Home</div>
+                                </div>
+                                <h4 class="badaboombb black-shadow">Work XP</h4>
+                            </div>
+                            <div class="intro-wrapper">
+                                    <div class="box intro-box1">
+                                        <p class="text top-left bangers"> Fall '17 ...</p>
+                                        <p class="text bottom-right bangers"> Bitten by a radio-active spider during his Lecture ...</p>
+                                    </div>
+                                    <div class="box intro-box2">
+                                        <p class="text top-left bangers"> ... he grows a passion for everything web-related!</p>
+                                    </div>
+                                    <div class="box intro-box3">
+                                        <p class="text top-left bangers"> His senses feel responsive to every detail, annoying bug and gorgeous design ...</p>
+                                        <p class="text bottom-right bangers"> His new found powers make him appreciate the web even more !</p>
+                                    </div>
+                            </div>
+                            <div class="box ict-box1">
+                                <div class="boxinner bangers">USC Institute for Creative Technologies</div>
+                                <p class="text top-right bangers"> Spring '18</p>
+                                <p class="text bottom-left bangers" style="bottom: 5px;"> He's finally invited to join <span class="strike-through">The Avengers</span> ICT !</p>
+                                <p class="text bottom-right bangers"> ... where he learns to harness the power of the React-or with imaculate Sass !</p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="box hackaday-box1">
+                                <div class="boxinner altrotation bangers"> SupplyFrame HQ</div>
+                                <p class="text top-right bangers"> ... Summer '18</p>
+                                <p class="text bottom-left bangers"> Confident and Prideful of his superpowers, he's chosen to work with the elite to protect the city of <a href="https://hackaday.io/" target="_blank" class="emphasis thin-yellow-shadow">hackaday</a> ...</br>
+                                    Here he's faced with the ultimate challenge, his biggest nemesis - The Back-End! </p>
+                                <p class="text bottom-right bangers"> ... With the entire HQ relying on him, he learns to navigate the <a href="https://expressjs.com/" target="_blank" class="emphasis thin-yellow-shadow">express</a> voyager over the <a href="https://nodejs.org/" target="_blank" class="emphasis thin-yellow-shadow">node</a>,
+                                    gets better at weaving the web, and manages to secure the end-point!</p>
+                            </div>
+                            <div class="wrapper">
+                                <div class="box hackaday-box2">
+                                    <p class="text top-left bangers"> Fall '18 ...</p>
+                                    <p class="text bottom-right bangers"> caught in-between the stuggles of his secret identity as a grad student, he fails multiple times ... </p>
+                                </div>
+                                <div class="box hackaday-box3">
+                                    <p class="text top-left bangers" style="width: 300px;"> But he continues to fight the swarm of bugs on the <a href="https://git-scm.com/" target="_blank" class="emphasis thin-yellow-shadow">git</a>, makes major commits and revamps the interface ...</p>
+                                    <p class="text bottom-right bangers" style="width: max-content"> ... and most importantly he learns how important it is to ask for help when in doubt!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="box hackaday-box4">
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="centered badaboombb black-shadow">Work XP</h4>
-                    <div class="box box1">
-                        <div class="boxinner altrotation bangers"> SupplyFrame HQ</div>
-                        <p class="text top-right bangers"> ... Summer '18</p>
-                        <p class="text bottom-left bangers"> Confident and Prideful of his superpowers, he's chosen to work with the elite to protect <span class="emphasis black-shadow">hackaday</span> ...</br>
-                            Here he's faced with the ultimate challenge, his biggest nemesis - The Back-End! </p>
-                        <p class="text bottom-right bangers"> ... With the entire HQ relying on him, he learns to navigate the express voyager over the node,
-                            gets better at scripting the web, and manages to secure the end-point!</p>
-                    </div>
-                    <div class="box box2">
-                        <p class="text top-right bangers"> ... Summer '18</p>
-                    </div>
-                    <!-- <div class="box box2">
-                        <div class="boxinner bangers">USC Institute for Creative Technologies</div>
-                    </div> -->
                 </aside>
 
-                <aside class="projects panel redbg">
+                <aside class="projects panel redbg" data-panel="projects">
                     <div class="back-arrow">
                         <img  src="./assets/images/backarrow.svg"/>
-                        <div class="bangers inline">Prev</div>
+                        <div class="bangers inline">Home</div>
                     </div>
                     <h4 class="centered badaboombb yellow-shadow">Projects</h4>
                 </aside>
 
-                <aside class="superpowers panel pinkbg">
+                <aside class="superpowers panel pinkbg" data-panel="superpowers">
                     <div class="back-arrow">
                         <img  src="./assets/images/backarrow.svg"/>
-                        <div class="bangers inline">Prev</div>
+                        <div class="bangers inline">Home</div>
                     </div>
                     <h4 class="centered badaboombb yellow-shadow">Superpowers</h4>
                     <section class="chimichangas">
@@ -91,16 +126,18 @@
                     </section>
                 </aside>
 
-                <aside class="contact panel greenbg">
+                <aside class="contact panel greenbg" data-panel="contact">
                     <div class="back-arrow">
                         <img  src="./assets/images/backarrow.svg"/>
-                        <div class="bangers inline">Prev</div>
+                        <div class="bangers inline">Home</div>
                     </div>
                     <h4 class="centered badaboombb yellow-shadow">Contact</h4>
                 </aside>
             </div>
         </div>
     <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.extensions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="./functionality/randomization.js"></script>
     </body>

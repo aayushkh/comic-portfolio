@@ -94,6 +94,7 @@ header {
 }
 
 img.barcode {
+    width: max-content;
     max-width: 225px;
     height: auto;
     position: absolute;
@@ -207,8 +208,16 @@ h5 {
     text-shadow: -1px -1px yellow, 1px 1px #ffa500,  2px 2px orange;
 }
 
+.thin-yellow-shadow {
+    text-shadow: -1px -1px yellow, 1px 1px #ffa500,  1px 1px orange;
+}
+
 .black-shadow {
     text-shadow: -1px -1px black, 1px 1px black,  2px 2px black;
+}
+
+.thin-black-shadow {
+    text-shadow: -1px -1px black, 1px 1px black,  1px 1px black;
 }
 
 .grey-shadow {

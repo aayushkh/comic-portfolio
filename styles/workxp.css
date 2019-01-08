@@ -1,74 +1,202 @@
 /* WorkXP */
 
-.workxp h4 {
+/* Layout */
+
+#workxp-header {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    transition: opacity 2000ms;
+}
+
+#workxp-header.active {
+    display: block;
+    opacity: 1;
+}
+
+#workxp-header h4 {
     color: gray;
 }
 
+.section {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.section.active {
+    opacity: 1;
+    transition: opacity 1/200ms;
+}
+
 .box{
-    margin:25px auto;
-    width:95%;
-    height:38%;
     background:#fff;
     border: solid black;
     border-color: black;
 }
-  
-.box1 {
+
+.intro-wrapper {
+    display: flex;
+    height: 40%;
+}
+
+.intro-box1 {
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 17%;
+    background-image: url(../assets/images/spider-bite-1-bnw.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 5% 9% 6% 10%/10% 8% 10% 5%;
+}
+
+.intro-box2 {
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 20%;
+    background-image: url(../assets/images/spider-halftone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 5px 3px 3px 5px;
+    border-radius: 95% 2% 90% 2%/4% 95% 3% 70%;
+    transform: rotate(1deg);
+}
+
+.intro-box3::before {
+	content: "";
+    position: absolute;
+	width: 100%;
+	height: 110%;
+	top: -5%;
+	left: 0%;
+    z-index: -1;
+    background-image: url(../assets/images/responsive-bnw.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-2deg);
+}
+
+.intro-box3 {
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 48%;
+    background-image: url(../assets/images/hackaday-bnw.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 5px 3px 3px 5px;
+    border-radius: 9% 1% 40% 1%/4% 12% 6% 20%;
+    transform: rotate(1deg);
+}
+
+
+.ict-box1 {
+    position: relative;
+	overflow: hidden;
+    margin:25px auto;
+    width:95%;
+    height:35%;
+    background-image: url(../assets/images/usc-ict-image.jpg);
+    background-position: center bottom;
+    background-size: 100% auto;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 5% 9% 6% 10%/10% 4% 10% 5%;
+}
+
+.hackaday-box1::before {
+	content: "";
+    position: absolute;
+	width: 100%;
+	height: 110%;
+	top: -5%;
+	left: 0%;
+    z-index: -1;
     background-image: url(../assets/images/supplyframe-splash.jpg);
     background-position: center center;
-    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-1deg);
+}
+
+.hackaday-box1 {
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 95%;
+    height: 38%;
     border-width: 3px 4px 3px 5px;
     border-radius: 9% 1% 40% 1%/4% 12% 6% 20%;
     transform: rotate(1deg);
 }
 
-.top-right {
-    font-size: 24px;
-    top: -2px;
-    position: absolute;
-    right: 0;
-    transform: rotate(1deg) skew(-5deg);
-    margin: 0px;
-    padding: 5px 5px;
-    background: #ddd;
-    border: 1px solid #222;
-    box-shadow: 3px 3px 0 #222;
+.wrapper {
+    display: flex;
+    height: 40%;
 }
 
-.bottom-left {
-    font-size: 20px;
-    max-width: 300px;
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    transform: rotate(-1deg) skew(0deg);
-    margin: 0px;
-    padding: 5px 5px;
-    background: #ddd;
-    border: 1px solid #222;
-    box-shadow: 3px 3px 0 #222;
-}
-
-.bottom-right {
-    font-size: 20px;
-    max-width: 300px;
-    position: absolute;
-    bottom: 12px;
-    right: 0;
-    transform: rotate(-1deg) skew(-3deg);
-    margin: 0px;
-    padding: 5px 5px;
-    background: #ddd;
-    border: 1px solid #222;
-    box-shadow: 3px 3px 0 #222;
-}
-
-.box2 {
-    background-image: url(../assets/images/usc-ict-image.jpg);
-    background-position: center bottom;
-    background-size: 100% auto;
+.hackaday-box2 {
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 30%;
+    background-image: url(../assets/images/daily-struggle-bnw.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-width: 3px 3px 5px 5px;
-    border-radius: 5% 95% 6% 10%/10% 4% 10% 5%;
+    border-radius: 5% 9% 6% 10%/10% 8% 10% 5%;
+}
+
+.hackaday-box3::before {
+	content: "";
+    position: absolute;
+	width: 100%;
+	height: 110%;
+	top: -5%;
+	left: 0%;
+    z-index: -1;
+    background-image: url(../assets/images/hackaday-bnw.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-1deg);
+}
+
+.hackaday-box3 {
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 60%;
+    background-image: url(../assets/images/hackaday-bnw.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 5px 3px 3px 5px;
+    border-radius: 9% 1% 40% 1%/4% 12% 6% 20%;
+    transform: rotate(1deg);
+}
+
+.hackaday-box4 {
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 90%;
+    height:38%;
+    background-color: lightgray;
+    border-width: 5px 3px 3px 5px;
+    border-radius: 95% 2% 90% 2%/4% 95% 3% 70%;
+    transform: rotate(1deg);
 }
 
 .boxinner{
@@ -83,11 +211,88 @@
     box-shadow: 3px 3px 0 #222;
 }
 
+.top-left {
+    top: 2px;
+    left: 10px;
+    max-width: 250px;
+    width: max-content;
+    font-size: 16px;
+    margin: 0px;
+    padding: 5px 5px;
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+    transform: rotate(-1deg) skew(-5deg);
+}
+
+.top-right {
+    font-size: 16px;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    margin: 0px;
+    padding: 5px 5px;
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+    transform: skew(-2deg);
+}
+
+.bottom-left {
+    font-size: 16px;
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-1deg) skew(0deg);
+    margin: 0px;
+    padding: 5px 5px;
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+}
+
+.bottom-right {
+    font-size: 16px;
+    max-width: 300px;
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    transform: rotate(-1deg) skew(-3deg);
+    margin: 0px;
+    padding: 5px 5px;
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+}
+
+/* BOX Specifics */
+
+.strike-through::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    width: 28%;
+    height: 0.3em;
+    border-radius: .05em;
+    background-color: rgba(150,0,0,0.8);
+    transform-origin: 0% 0%;
+    transform: rotateZ(-3deg);
+    opacity: 1;
+}
+
 .altrotation {
     transform: rotate(-2deg);
 }
 
 .emphasis {
-    color: gold;
+    color: black;
     text-align: center;
+}
+
+/* FullPage Props */
+
+.section {
+    text-align:center;
+    font-size: 3em;
 }
