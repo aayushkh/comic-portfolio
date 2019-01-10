@@ -39,6 +39,56 @@
     border-color: black;
 }
 
+.prologue-wrapper {
+    font-size: 32px;
+    display: flex;
+    height: 40%;
+}
+
+.prologue-box1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 23%;
+    background-color: white;
+    border: none;
+}
+
+.prologue-box2 {
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 30%;
+    color: white;
+    background-image: url(../assets/images/neither-have-i-bnw.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 5px 3px 3px 5px;
+    border-radius: 95% 2% 90% 2%/4% 95% 3% 70%;
+    transform: rotate(1deg);
+}
+
+.prologue-box3 {
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+	overflow: hidden;
+    margin:25px auto;
+    width:95%;
+    height:35%;
+    background-color: white;
+    border: none;
+}
+
 .intro-wrapper {
     display: flex;
     height: 40%;
@@ -100,6 +150,24 @@
     transform: rotate(1deg);
 }
 
+.wides-wrapper {
+    display: flex;
+    height: 40%;
+}
+
+.wides-box1 {
+    position: relative;
+	overflow: hidden;
+    margin:25px auto;
+    width:40%;
+    background-image: url(../assets/images/usc-logo.svg);
+    background-position: center center;
+    background-size: 60% auto;
+    background-color: #222;
+    background-repeat: no-repeat;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 5% 9% 6% 10%/10% 4% 10% 5%;
+}
 
 .ict-box1 {
     position: relative;
@@ -140,7 +208,7 @@
     transform: rotate(1deg);
 }
 
-.wrapper {
+.hackaday-wrapper {
     display: flex;
     height: 40%;
 }
@@ -187,7 +255,40 @@
     transform: rotate(1deg);
 }
 
-.hackaday-box4 {
+.superhero-wrapper {
+    display: flex;
+    height: 40%;
+}
+
+.superhero-box1 {
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 40%;
+    background-image: url(../assets/images/the-hero-we-deserve-bnw.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 5px 3px 3px 5px;
+    border-radius: 95% 2% 90% 2%/4% 95% 3% 70%;
+    transform: rotate(1deg);
+}
+
+.superhero-box2 {
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 15%;
+    background-image: url(../assets/images/thenightwatch-bnw.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 5px 3px 3px 5px;
+    border-radius: 95% 2% 90% 2%/4% 95% 3% 70%;
+    transform: rotate(1deg);
+}
+
+.superhero-box {
     position: relative;
 	overflow: hidden;
     margin: 10px auto;
@@ -199,8 +300,20 @@
     transform: rotate(1deg);
 }
 
-.boxinner{
+.boxinner {
     font-size: 32px;
+    width: max-content;
+    transform: rotate(-1deg);
+    margin: 0px;
+    padding: 5px 5px;
+    float: left;
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+}
+
+.boxinner-v2 {
+    font-size: 26px;
     width: max-content;
     transform: rotate(-1deg);
     margin: 0px;
@@ -266,12 +379,46 @@
     box-shadow: 3px 3px 0 #222;
 }
 
+.right {
+    font-size: inherit;
+    max-width: 200px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    transform: rotate(-1deg) skew(-3deg);
+    margin: 0px;
+    padding: 5px 5px;
+    background: transparent;
+}
+
 /* BOX Specifics */
+
+.prologue-box3 p {
+    border: none;
+    background-color: white;
+    box-shadow: 3px 3px 0 #222;
+
+}
+
+.captain-levi {
+    font-size: 128px;
+}
+
+.fas {
+    transform: rotate(5deg);
+    font-size: 3em;
+    color: grey;
+}
+
+.bad-guys {
+    display: contents;
+    color: rgb(121, 15, 15);
+}
 
 .strike-through::before {
     position: absolute;
     content: '';
-    top: 50%;
+    top: 66%;
     width: 28%;
     height: 0.3em;
     border-radius: .05em;

@@ -3,21 +3,24 @@ Like the one where the bad guys win ?
 Yeah neither have I.
 
 But lets rewind a bit here.
+Let me Introduce my self.
 
-You're probably wondering who am I ...
-What's so special about me?
+I am Aayush Khanna, and for the past year and a half I'm the one and only wannabee fullstack developer.
 
-I mean there are so many super-heros out there right ?
+For starters, just like our friendly neighbourhood spiderman, not only do I love everything on the web.
+I try to do everything with utmost love and passion.
 
-For starters, think of me as your friendly neighbourhood spiderman, I love everything on the web.
+And while he swings about fighting crime ...
 
-While he swings about fighting crime ...
+I fight issue tickets ... 
+I fight for every pixel on your screen, every hover state, every minute transition that could mean no less, 
 
-I fight issue tickets on github and make sure every line of code, every pixel on your screen is goddamn perfect.
+I fight for each and every line of code.
 
-They call me The Fullstack Developer.
+Because that's what makes me a great developer.
+That's why they call me The <wannabee> Fullstack Developer.
 
-Like every other hero, I grind, make ends meet, and try to live a normal life.
+And I do this like every other hero .... I grind, make ends meet, and try to live a normal life.
 
 But being a hero is not easy ...
 Every hero needs somebody ...
@@ -44,6 +47,7 @@ Hire The Fullstack Developer to your family !
 "When all hope is lost, and there's no end in sight, lift up your eyes, hero's will rise."
 
 
+Sorry I had to put that in somewhere.
 
 /* */
 
@@ -51,8 +55,9 @@ Hi I'm Aayush aka CaptainLevi
 
 Bitten by a radio-active spider during his WebTech class, he starts seeing everything in pixels!
 His senses feel responsive to every detail, and he can see every bug and detail
+He now feels super responsive to every screen, every bug and obsesses over every detail.
 
-He starts exploring his powers delving into the WiDeS
+He starts exploring his powers delving into the interweb with WiDeS, 
 
 He's finally invited to join the <Avengers> ICT ...
 ... where he learns to harness the power of the React-or with imaculate sass ...
@@ -71,3 +76,9 @@ he finally bids goodbye to his alies at the HQ and parts ways ...
 he's the hero hackaday deserves, but not the one it needs right now, 
 because he can take it, because he's not a hero. he's a silent guardian, a watchful protector ...
 the nightwatch
+
+Anyways ..
+
+You're probably wondering why me ...
+What's so special about me?
+I mean there are so many fullstack super-heros out there right ?
