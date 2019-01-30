@@ -13,7 +13,7 @@ new fullpage('#fullpage', {
     // sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
     css3: true,
-    fixedElements: '#workxp-header'
+    fixedElements: '#mystory-header'
 });
 
 fullpage_api.setAllowScrolling(false);
@@ -25,14 +25,14 @@ TweenMax.set("aside", { rotationY: 90, z: -siteW/2, x: siteW/2 });
 
 function enableHeader() {
     let openPanel = document.querySelectorAll("aside.open");
-    if (openPanel[0] && openPanel[0].dataset.panel == "workxp") {
-        document.querySelector("#workxp-header").classList.add("active");
+    if (openPanel[0] && openPanel[0].dataset.panel == "mystory") {
+        document.querySelector("#mystory-header").classList.add("active");
     }
 }
 
 function fullpageProps() {
     let openPanel = document.querySelectorAll("aside.open");
-    if (openPanel[0] && openPanel[0].dataset.panel == "workxp") {
+    if (openPanel[0] && openPanel[0].dataset.panel == "mystory") {
         fullpage_api.moveTo(1);
         fullpage_api.setAllowScrolling(true);
         fullpage_api.setKeyboardScrolling(true);
@@ -61,7 +61,7 @@ document.querySelectorAll(".navOption").forEach(option => {
 document.querySelectorAll(".back-arrow").forEach(back => {
     back.addEventListener('click', () => {
 
-        document.querySelector("#workxp-header").classList.remove("active");
+        document.querySelector("#mystory-header").classList.remove("active");
 
         timeLine.reverse();
         timeLine = new TimelineMax();
