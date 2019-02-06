@@ -1,0 +1,20 @@
+/* Contact */
+
+/* Layout */
+
+#contact-header {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    transition: opacity 2000ms;
+}
+
+#contact-header.active {
+    display: block;
+    opacity: 1;
+}
