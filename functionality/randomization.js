@@ -27,10 +27,13 @@ function enableHeader() {
     let openPanel = document.querySelectorAll("aside.open");
     if (openPanel[0] && openPanel[0].dataset.panel == "mystory") {
         document.querySelector("#mystory-header").classList.add("active");
-    }
-    else if (openPanel[0] && openPanel[0].dataset.panel == "workxp") {
+    } else if (openPanel[0] && openPanel[0].dataset.panel == "workxp") {
         document.querySelector("#workxp-header").classList.add("active");
-    }
+    } else if (openPanel[0] && openPanel[0].dataset.panel == "projects") {
+        document.querySelector("#projects-header").classList.add("active");
+    } else if (openPanel[0] && openPanel[0].dataset.panel == "contact") {
+        document.querySelector("#contact-header").classList.add("active");
+    } 
 }
 
 function fullpageProps() {
@@ -58,8 +61,14 @@ document.querySelectorAll(".navOption").forEach(option => {
         .to('.container', .4, { rotationY: -90, z: -siteW, ease: Power4.easeInOut }, "start+=0.7")
         .to('.site', .5, { scale: 1, ease: Power4.easeInOut }, "start+=1.2")
         .call(enableHeader);
+
+        document.querySelector('#' + option.dataset.nav + '-header .back-arrow').style.display = "flex";
     });
 });
+
+// document.querySelector('.back-arrow').addEventListener('click', () => {
+//     this.style.display = "none";
+// });
 
 document.querySelectorAll(".back-arrow").forEach(back => {
     back.addEventListener('click', () => {
@@ -69,6 +78,7 @@ document.querySelectorAll(".back-arrow").forEach(back => {
             panelName = openPanel[0].dataset.panel;
         }
 
+        back.style.display = "none";
         document.querySelector("#" + panelName + "-header").classList.remove("active");
 
         timeLine.reverse();
