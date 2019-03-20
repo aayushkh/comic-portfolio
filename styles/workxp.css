@@ -19,7 +19,39 @@
     opacity: 1;
 }
 
-.workxp-pageone {
+.supplyframe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.ict {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+/* #workxp-header h4 {
+    color: gray;
+} */
+
+.section {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.section.active {
+    opacity: 1;
+    transition: opacity 1/200ms;
+}
+
+/* .workxp-pageone {
     display: grid;
     margin: 0;
     grid-template-columns: 1fr 1fr;
@@ -37,4 +69,4 @@
 
 .workxp-pageone .usc-ict {
     background-color: red;    
-}
+} */

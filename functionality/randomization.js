@@ -8,17 +8,6 @@ var siteW = window.innerWidth;
 var siteH = window.innerHeight;
 var timeLine = new TimelineMax({onComplete:enableHeader});
 
-new fullpage('#fullpage', {
-    licenseKey: 'FEC24492-659942EE-A7417337-1366E6FC',
-    // sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
-    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-    css3: true,
-    fixedElements: ['#mystory-header', '#workxp-header', '#projects-header', '#contact-header']
-});
-
-fullpage_api.setAllowScrolling(false);
-fullpage_api.setKeyboardScrolling(false);
-
 TweenMax.set(".site", { perspective: 5000 });
 TweenMax.set(".container", { transformStyle: "preserve-3d",  transformOrigin: '-0% 50%' });
 TweenMax.set("aside", { rotationY: 90, z: -siteW/2, x: siteW/2 });
@@ -36,14 +25,31 @@ function enableHeader() {
     } 
 }
 
-function fullpageProps() {
+function innitializeFullPage() {
     let openPanel = document.querySelectorAll("aside.open");
-    if (openPanel[0] && openPanel[0].dataset.panel == "mystory" || "workxp" || "projects" || "contact") {
-        fullpage_api.moveTo(1);
-        fullpage_api.setAllowScrolling(true);
-        fullpage_api.setKeyboardScrolling(true);
-    }
+    let openPanelName = openPanel[0].dataset.panel;
+    console.log(openPanel[0].dataset.panel);
+    
+    new fullpage('#fullpage-' + openPanelName , {
+        licenseKey: 'FEC24492-659942EE-A7417337-1366E6FC',
+        // sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        css3: true,
+        fixedElements: ['#mystory-header', '#workxp-header', '#projects-header', '#contact-header']
+    });
 
+    fullpage_api.moveTo(1);
+    fullpage_api.setAllowScrolling(true);
+    fullpage_api.setKeyboardScrolling(true);
+
+}
+
+function destroyFullpage() {
+    fullpage_api.setAllowScrolling(false);
+    fullpage_api.setKeyboardScrolling(false);
+    setTimeout(function() {
+        fullpage_api.destroy('all')
+    }, 1500);
 }
 
 document.querySelectorAll(".navOption").forEach(option => {
@@ -55,8 +61,9 @@ document.querySelectorAll(".navOption").forEach(option => {
         open[0].classList.remove("open");
         document.querySelector(navOption).classList.add("open");
 
+        innitializeFullPage();
+
         timeLine
-        .call(fullpageProps)
         .to('.site', .5, { scale: 0.75, ease: Power4.easeInOut }, "start")
         .to('.container', .4, { rotationY: -90, z: -siteW, ease: Power4.easeInOut }, "start+=0.7")
         .to('.site', .5, { scale: 1, ease: Power4.easeInOut }, "start+=1.2")
@@ -65,10 +72,6 @@ document.querySelectorAll(".navOption").forEach(option => {
         document.querySelector('#' + option.dataset.nav + '-header .back-arrow').style.display = "flex";
     });
 });
-
-// document.querySelector('.back-arrow').addEventListener('click', () => {
-//     this.style.display = "none";
-// });
 
 document.querySelectorAll(".back-arrow").forEach(back => {
     back.addEventListener('click', () => {
@@ -84,7 +87,6 @@ document.querySelectorAll(".back-arrow").forEach(back => {
         timeLine.reverse();
         timeLine = new TimelineMax();
 
-        fullpage_api.setAllowScrolling(false);
-        fullpage_api.setKeyboardScrolling(false);
+        destroyFullpage();
     });
 });
