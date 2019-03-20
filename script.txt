@@ -82,3 +82,17 @@ Anyways ..
 You're probably wondering why me ...
 What's so special about me?
 I mean there are so many fullstack super-heros out there right ?
+
+
+
+WORK XP -
+
+Main highlights-
+hackaday.io
+    - contributed to client side and server-side JS dev, by taking innitiative and fixing issue tickets bugs
+    - added onboarding source and user interests to the SQL database and Google Analytics, along with features to delete spam users
+    - revamped the user onboarding page, profile page and share features
+Worked on side projects related to React Native, Browser animation
+Created a platform game for tindie.com
+
+
