@@ -43,6 +43,7 @@
     font-size: 32px;
     display: flex;
     height: 40%;
+    margin: 0 10%;
 }
 
 .prologue-box1 {
@@ -52,7 +53,7 @@
     position: relative;
 	overflow: hidden;
     margin: 10px auto;
-    width: 23%;
+    width: 40%;
     background-color: white;
     border: none;
 }
@@ -64,7 +65,7 @@
     flex-direction: column;
 	overflow: hidden;
     margin: 10px auto;
-    width: 30%;
+    width: 40%;
     color: white;
     background-image: url(../assets/images/neither-have-i-confused-bnw.png);
     background-position: center center;
@@ -80,13 +81,19 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: left;
     position: relative;
 	overflow: hidden;
     margin:25px auto;
-    width:95%;
-    height:35%;
+    padding: 10%;
+    width: 70%;
+    height:80%;
     background-color: white;
     border: none;
+    background-image: url(../assets/images/captain-levi.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .intro-wrapper {
@@ -272,6 +279,7 @@
 .superhero-wrapper {
     display: flex;
     height: 40%;
+    margin: 0 10%;
 }
 
 .superhero-box1 {
