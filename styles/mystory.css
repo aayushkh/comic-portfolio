@@ -66,7 +66,7 @@
     margin: 10px auto;
     width: 30%;
     color: white;
-    background-image: url(../assets/images/neither-have-i-bnw.jpg);
+    background-image: url(../assets/images/neither-have-i-confused-bnw.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,7 +173,7 @@
     position: relative;
 	overflow: hidden;
     margin:25px auto;
-    width:95%;
+    width:85%;
     height:35%;
     background-image: url(../assets/images/usc-ict-image.jpg);
     background-position: center bottom;
@@ -201,7 +201,7 @@
     position: relative;
 	overflow: hidden;
     margin: 10px auto;
-    width: 95%;
+    width: 85%;
     height: 38%;
     border-width: 3px 4px 3px 5px;
     border-radius: 9% 1% 40% 1%/4% 12% 6% 20%;
@@ -211,6 +211,7 @@
 .hackaday-wrapper {
     display: flex;
     height: 40%;
+    margin: 0 10%;
 }
 
 .hackaday-box2 {
@@ -226,7 +227,20 @@
     border-radius: 5% 9% 6% 10%/10% 8% 10% 5%;
 }
 
-.hackaday-box3::before {
+
+.hackaday-box3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+	overflow: hidden;
+    margin: 10px auto;
+    width: 50%;
+    background-color: white;
+    border: none;
+}
+
+.hackaday-box4::before {
 	content: "";
     position: absolute;
 	width: 100%;
@@ -241,7 +255,7 @@
     transform: rotate(-1deg);
 }
 
-.hackaday-box3 {
+.hackaday-box4 {
     position: relative;
 	overflow: hidden;
     margin: 10px auto;
@@ -262,9 +276,8 @@
 
 .superhero-box1 {
     position: relative;
-	overflow: hidden;
     margin: 10px auto;
-    width: 40%;
+    width: 50%;
     background-image: url(../assets/images/the-hero-we-deserve-bnw.gif);
     background-position: center center;
     background-repeat: no-repeat;
@@ -276,9 +289,11 @@
 
 .superhero-box2 {
     position: relative;
-	overflow: hidden;
+    top: 0%;
     margin: 10px auto;
-    width: 15%;
+    z-index: 2;
+    width: 23%;
+    height: 125%;
     background-image: url(../assets/images/thenightwatch-bnw.gif);
     background-position: center center;
     background-repeat: no-repeat;
