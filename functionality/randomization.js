@@ -32,8 +32,7 @@ function innitializeFullPage() {
     
     new fullpage('#fullpage-' + openPanelName , {
         licenseKey: 'FEC24492-659942EE-A7417337-1366E6FC',
-        // sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        anchors: ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'],
         css3: true,
         fixedElements: ['#mystory-header', '#workxp-header', '#projects-header', '#contact-header']
     });

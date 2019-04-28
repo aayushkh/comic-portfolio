@@ -17,7 +17,7 @@ I fight for every pixel on your screen, every hover state, every minute transiti
 
 I fight for each and every line of code.
 
-Because that's what makes me a great developer.
+Because that's what makes me a hero.
 That's why they call me The <wannabee> Fullstack Developer.
 
 And I do this like every other hero .... I grind, make ends meet, and try to live a normal life.
@@ -35,11 +35,11 @@ that makes them SUPER-heroes ...
 
 It's the real reason why the bad-guys never win.
 
-Would you be willing to include me in your family ...
-To save this story ...
-and be my superhero ?
-
+Would you be willing to be my family ...
+and save this story ...
 The End.
+
+Let me fight for you / Let me be your superhero.
 
 Hire The Fullstack Developer to your family !
 
@@ -67,9 +67,10 @@ Thinking he's finally in control of his powers ... little did he know what lay a
 Prideful of his prior feats, as he begins his internship to face the ultimate challenge, his biggest fear - The Back-End Monster.
 He needs to secure an end-point, and the entire HQ depends on him. (dramatic way to say company will sink)
 
-caught in-between the stuggles of his secret identity as a grad student, he fails multiple times ...
+caught in-between the stuggles of his secret identity as a grad student, I failed multiple times ...
+... but hero never give up. We fight. We give it our best.
 
-he continues fight the swarm of bugs on the git, makes major commits, revamps the interface ...
+I continued fight the swarm of bugs on the git, made major commits, revamped the user interface ...
 ... and most importantly he learns how important it is to ask for help when in doubt!
 
 he finally bids goodbye to his alies at the HQ and parts ways ...
