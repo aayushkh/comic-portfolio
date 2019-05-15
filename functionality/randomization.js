@@ -16,6 +16,7 @@ function enableHeader() {
     let openPanel = document.querySelectorAll("aside.open");
     if (openPanel[0] && openPanel[0].dataset.panel == "mystory") {
         document.querySelector("#mystory-header").classList.add("active");
+        document.querySelector("#menu").classList.add("active");
     } else if (openPanel[0] && openPanel[0].dataset.panel == "workxp") {
         document.querySelector("#workxp-header").classList.add("active");
     } else if (openPanel[0] && openPanel[0].dataset.panel == "projects") {
@@ -31,8 +32,19 @@ function innitializeFullPage() {
     console.log(openPanel[0].dataset.panel);
     
     new fullpage('#fullpage-' + openPanelName , {
+
+        //Navigation
+        menu: '#menu',
+        lockAnchors: false,
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+        navigation: false,
+        navigationPosition: 'right',
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        showActiveTooltip: false,
+        slidesNavigation: false,
+        slidesNavPosition: 'bottom',
+    
         licenseKey: 'FEC24492-659942EE-A7417337-1366E6FC',
-        anchors: ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'],
         css3: true,
         fixedElements: ['#mystory-header', '#workxp-header', '#projects-header', '#contact-header']
     });
@@ -82,6 +94,9 @@ document.querySelectorAll(".back-arrow").forEach(back => {
 
         back.style.display = "none";
         document.querySelector("#" + panelName + "-header").classList.remove("active");
+        if (panelName == "mystory") {
+            document.querySelector("#menu").classList.remove("active");
+        }
 
         timeLine.reverse();
         timeLine = new TimelineMax();
