@@ -14,24 +14,27 @@ TweenMax.set("aside", { rotationY: 90, z: -siteW/2, x: siteW/2 });
 
 function enableHeader() {
     let openPanel = document.querySelectorAll("aside.open");
-    if (openPanel[0] && openPanel[0].dataset.panel == "mystory") {
-        document.querySelector("#mystory-header").classList.add("active");
-        document.querySelector("#menu").classList.add("active");
-    } else if (openPanel[0] && openPanel[0].dataset.panel == "workxp") {
-        document.querySelector("#workxp-header").classList.add("active");
-    } else if (openPanel[0] && openPanel[0].dataset.panel == "projects") {
-        document.querySelector("#projects-header").classList.add("active");
-    } else if (openPanel[0] && openPanel[0].dataset.panel == "contact") {
-        document.querySelector("#contact-header").classList.add("active");
-    } 
+    if (openPanel[0]) {
+        let panelName = openPanel[0].dataset.panel;
+        if (panelName == "mystory") {
+            document.querySelector("#mystory-header").classList.add("active");
+            document.querySelector("#menu").classList.add("active");
+        } else if (panelName == "workxp") {
+            document.querySelector("#workxp-header").classList.add("active");
+        } else if (panelName == "projects") {
+            document.querySelector("#projects-header").classList.add("active");
+        } else if (panelName == "contact") {
+            document.querySelector("#contact-header").classList.add("active");
+        }
+    }
 }
 
 function innitializeFullPage() {
     let openPanel = document.querySelectorAll("aside.open");
-    let openPanelName = openPanel[0].dataset.panel;
+    let panelName = openPanel[0].dataset.panel;
     console.log(openPanel[0].dataset.panel);
     
-    new fullpage('#fullpage-' + openPanelName , {
+    new fullpage('#fullpage-' + panelName , {
 
         //Navigation
         menu: '#menu',
@@ -64,13 +67,14 @@ function destroyFullpage() {
 }
 
 document.querySelectorAll(".navOption").forEach(option => {
-    let navOption = "." + option.dataset.nav;
-
+    let navOption = option.dataset.nav;
     option.addEventListener('click', () => {
+        history.replaceState({current: navOption}, null, `${location.origin}/${navOption}`);
+
         let open = document.getElementsByClassName("open");
 
         open[0].classList.remove("open");
-        document.querySelector(navOption).classList.add("open");
+        document.querySelector(`.${navOption}`).classList.add("open");
 
         innitializeFullPage();
 
@@ -86,8 +90,10 @@ document.querySelectorAll(".navOption").forEach(option => {
 
 document.querySelectorAll(".back-arrow").forEach(back => {
     back.addEventListener('click', () => {
+        history.replaceState({current: 'home'}, null, `/`);
+
         let openPanel = document.querySelectorAll("aside.open");
-        panelName = ""
+        let panelName = "";
         if (openPanel[0]) {
             panelName = openPanel[0].dataset.panel;
         }
