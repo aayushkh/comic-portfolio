@@ -97,3 +97,22 @@ Worked on side projects related to React Native, Browser animation
 Created a platform game for tindie.com
 
 
+## IDEAS
+
+Daily Life with soundtrack
+
+Animation Idea -
+Meet bear.
+Story of bear as Mom.
+No words.
+Bear taking care of me.
+
+
+User Guide
+* I like being creative.
+* I like to create something that hasn't been done before.
+* I don't like getting bogged down in the nuances of how things should work.
+* Ilove epic music, epic movies, epic games ... and anything 
+* Visual learner
+* Un-opinionated
+
